@@ -1,0 +1,625 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sidebar {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    width: 200px;
+    height: 100vh;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    color: #23527c;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .card button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #23527c;
+  }
+  
+  .product-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .product-table th, .product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .product-table th {
+    background-color: #f0f0f0;
+  }
+  
+  .product-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .user-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #f0f0f0;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Home PAGE */
+  .homepage {
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .heading {
+    margin-bottom: -25px;
+  }
+  
+  .login-button {
+    background-color: white;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: -8px;
+    margin-left: 1700px;
+  }
+  
+  .slider-container {
+    margin: 10px auto;
+    max-width: 1850px;
+    /* margin-top: 0px; */
+  }
+  
+  .slide {
+    position: relative;
+    height: 890px; /* Set a height for the slides */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255); /* Change text color for better visibility */
+    text-align: center;
+    overflow: hidden;
+  }
+  
+
+  .slide1 {
+  background-image: url('../public/gym1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide2 {
+  background-image: url('../public/gym2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide3 {
+  background-image: url('../public/gym3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide h2 {
+  margin-top: 350px;
+}
+
+.text-background {
+  background-color: rgba(119, 119, 119, 0.5);/* Gray with 50% opacity */
+  padding: 10px; /* Add some padding for better appearance */
+  border-radius: 5px; /* Optional: add rounded corners */
+  text-align: center; /* Center the text */
+}
+
+  .cta-button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .testimonials {
+    background-color: #e7f3fe;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  /* ABOUT US */
+  .welcome-section {
+    background-color: #f9f9f9; /* Light background color for contrast */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1800px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the section */
+    font-family: Arial, sans-serif; /* Font family */
+    color: #333; /* Dark text color for readability */
+  }
+  
+  .welcome-section h2 {
+    font-size: 24px; /* Heading size */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #2c3e50; /* Darker color for the heading */
+  }
+  
+  .welcome-section ul {
+    list-style-type: disc; /* Bullet points for the list */
+    padding-left: 20px; /* Indent the list */
+  }
+  
+  .welcome-section li {
+    margin-bottom: 5px; /* Space between list items */
+  }
+  
+  .welcome-section p {
+    line-height: 1.6; /* Increase line height for readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+  }
+
+  /* testimonial */
+  .testimonials {
+    max-width: 1000px; /* Limit the width of the testimonials section */
+    margin: 20px auto; /* Center the section */
+    text-align: center; /* Center the text */
+  }
+  
+  .swiper-container {
+    width: 100%;
+    height: 300px; /* Set a height for the slider */
+  }
+  
+  .swiper-slide {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .testimonial-image {
+    width: 150px; /* Set a width for the images */
+    height: 150px; /* Set a height for the images */
+    border-radius: 50%; /* Make images circular */
+    margin-bottom: 10px; /* Space below the image */
+    margin-left: 430px
+  }
+  
+  .swiper-pagination {
+    bottom: 10px; /* Position pagination */
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #000; /* Color for navigation buttons */
+  }
+
+  /* Login */
+
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('../public/gym1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+} */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  background-image: url('../public/gym1.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 500px; /* Set a fixed width for the form */
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="first_name"],
+input[type="last_name"] 
+input[type="contact_number"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.toggle-link {
+  color: #002aff; /* Bootstrap primary color */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.toggle-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3; 
+} */
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* User */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:30px;
+  position: relative;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.product-card {
+  flex: 0 1 calc(25% - 10px);
+  margin: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px; 
+  text-align: center; 
+  margin-top: 50px;
+}
+
+.product-card h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.product-card p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.product-image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Optional: rounded corners for images */
+}
+
+.user-slider {
+  margin: 10px auto;
+  max-width: 1850px;
+  /* margin-top: 0px; */
+}
+
+.slides {
+  position: relative;
+  height: 445px; /* Set a height for the slides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255); /* Change text color for better visibility */
+  text-align: center;
+  overflow: hidden;
+}
+
+.slide3 {
+  background-image: url('../public/gym1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide4 {
+  background-image: url('../public/gym2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide5 {
+  background-image: url('../public/gym3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cart-icon {
+  position: absolute;
+  top: 470px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+  color: #000; /* Change color as needed */
+}
+
+.cart-item-count {
+  position: absolute;
+  top: -5px; /* Adjust as needed */
+  right: -10px; /* Adjust as needed */
+  background-color: red; /* Background color for the badge */
+  color: white; /* Text color for the badge */
+  border-radius: 50%; /* Make it circular */
+  padding: 2px 6px; /* Padding for the badge */
+  font-size: 12px; /* Font size for the badge */
+}
+
+button {
+  background-color: #000000; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for button */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*CART */
+.cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+.cart-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Empty Cart Message */
+.cart-container p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Cart Items Styles */
+.cart-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Cart Item Card */
+.cart-item-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.cart-item-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Product Name */
+.product-name {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Product Quantity and Price */
+.product-quantity,
+.product-price {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Remove Button Styles */
+.remove-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Loading and Error Messages */
+.loading, .error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff4d4d;
+  margin-top: 20px;
+}
+
+.cart-content {
+  display: flex; /* Use flexbox to align items */
+}
+
+.total-price-sidebar {
+  width: 250px; /* Set a fixed width for the sidebar */
+  padding: 20px; /* Add some padding */
+  background-color: #f8f8f8; /* Light background color */
+  border-left: 1px solid #ddd; /* Add a border to separate from cart items */
+  margin-left: 735px; /* Space between cart items and sidebar */
+}
+
+.total-price-sidebar h2 {
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.total-price-sidebar p {
+  font-size: 1.5em; /* Increase font size for total price */
+  font-weight: bold; /* Make the total price bold */
+}
