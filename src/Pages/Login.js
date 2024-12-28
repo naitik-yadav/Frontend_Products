@@ -152,6 +152,7 @@ const Login = () => {
                         {isRegistering ? 'Login here' : 'Register here'}
                     </span>
                 </p>
+                <a href='/'>Go To HomePage</a>
             </div>
         </div>
     );

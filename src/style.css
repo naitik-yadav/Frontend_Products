@@ -36,6 +36,7 @@
       transform: rotate(360deg);
     }
   }
+  
 
   .admin-dashboard {
     display: flex;
@@ -43,13 +44,47 @@
     overflow-x: hidden;
   }
   
-  .header {
+  /* .header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
     text-align: center;
     width: 100%;
-  }
+  } */
+
+  .header-container {
+    display: flex;                /* Enable flexbox */
+    align-items: center;         /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    padding: 10px;  
+    background-color: #000;            /* Add some padding */
+}
+
+.header-user {
+  width: 100%;
+  background-color: #000;
+}
+
+.logo {
+    max-width: 100px;           /* Set a max width for the logo */
+}
+
+.heading {
+  flex: 1;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+.login-button {
+    margin-left: 20px;          /* Add space between heading and button */
+    padding: 10px 20px;         /* Adjust button padding */
+    background-color: #007BFF;  /* Button background color */
+    color: white;               /* Button text color */
+    border: none;               /* Remove border */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;            /* Pointer cursor on hover */
+}
   
   .main-content {
     display: flex;
@@ -57,34 +92,59 @@
   }
   
   .sidebar {
-    background-color: #f0f0f0;
-    padding: 1rem;
-    width: 200px;
-    height: 100vh;
+    background-color: #e8e8e8; /* Darker background color for contrast */
+    padding: 1.5rem; /* Increased padding for better spacing */
+    width: 250px; /* Adjusted width for a more balanced look */
+    height: 100vh; /* Full height */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-right: 1px solid #000000; /* Light border on the right */
   }
   
   .sidebar ul {
-    list-style: none;
+    list-style: none; /* Remove default list styles */
     margin: 0;
     padding: 0;
   }
   
   .sidebar li {
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Increased space between items */
   }
   
   .sidebar a {
-    color: #337ab7;
-    text-decoration: none;
+    color: #000000; /* White text color for better visibility */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners for links */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .sidebar a i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.2rem; /* Adjust icon size */
   }
   
   .sidebar a:hover {
-    color: #23527c;
+    background-color: #9a8c98; /* Lighter background on hover */
+    color: #ffffff; /* Keep text color white on hover */
   }
   
   .content {
     flex: 1;
     padding: 2rem;
+  }
+
+  .card-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between cards */
+    margin-bottom: 20px; /* Space below the card container */
+  }
+  
+  .card {
+    flex: 1; /* Allow cards to grow equally */
+    margin: 0 10px; /* Add margin between cards */
+    min-width: 200px; /* Set a minimum width for cards */
   }
   
   .card {
@@ -100,7 +160,7 @@
   }
   
   .card button {
-    background-color: #337ab7;
+    background-color: #000000;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -166,7 +226,7 @@
   }
 
   .heading {
-    margin-bottom: -25px;
+    margin-bottom: 15px;
   }
   
   .login-button {
@@ -175,10 +235,9 @@
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: -8px;
-    margin-left: 1700px;
+    margin-left: 1200px;
   }
-  
+
   .slider-container {
     margin: 10px auto;
     max-width: 1850px;
@@ -217,10 +276,11 @@
 
 .slide h2 {
   margin-top: 350px;
+  color: white;
 }
 
 .text-background {
-  background-color: rgba(119, 119, 119, 0.5);/* Gray with 50% opacity */
+  background-color: rgb(0, 0, 0);/* Gray with 50% opacity */
   padding: 10px; /* Add some padding for better appearance */
   border-radius: 5px; /* Optional: add rounded corners */
   text-align: center; /* Center the text */
@@ -228,7 +288,7 @@
 
   .cta-button {
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.61);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -407,6 +467,7 @@ button:hover {
   align-items: center;
   margin:30px;
   position: relative;
+  background-color: whitesmoke;
 }
 
 .product-container {
@@ -424,6 +485,7 @@ button:hover {
   border-radius: 5px; 
   text-align: center; 
   margin-top: 50px;
+  background-color: white;
 }
 
 .product-card h2 {
@@ -622,4 +684,52 @@ button:hover {
 .total-price-sidebar p {
   font-size: 1.5em; /* Increase font size for total price */
   font-weight: bold; /* Make the total price bold */
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+ list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1230px;
+  width: 100%;
 }

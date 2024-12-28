@@ -50,6 +50,9 @@ function UserDashboard() {
 
     return (
         <div className="dashboard-container">
+              <header className="header-user">
+    <h1 className='heading'><i class='fas fa-dumbbell'></i> Welcome to Gym World</h1>
+</header>
             <div className="cart-icon" onClick={handleCartClick} style={{ cursor: 'pointer' }}>
             <FontAwesomeIcon icon={faShoppingCart} size="2x" />
             {cartItemCount > 0 && (
@@ -60,13 +63,13 @@ function UserDashboard() {
             <div className="user-slider">
                 <Slider {...settings}>
                     <div className="slides slide1">
-                        <h2 className="text-background">Get Fit, Stay Healthy!</h2>
+                        <h2 className="text-background"></h2>
                     </div>
                     <div className="slides slide2">
-                        <h2 className="text-background">Join Our Community</h2>
+                        <h2 className="text-background"></h2>
                    </div>
                     <div className="slides slide3">
-                        <h2 className="text-background">Explore Our Programs</h2>
+                        <h2 className="text-background"></h2>
                     </div>
                 </Slider>
             </div>

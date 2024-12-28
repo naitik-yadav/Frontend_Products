@@ -23,12 +23,13 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
-      <header className="header">
-        <h1 className='heading'>Welcome to Gym World</h1>
-        <button className="login-button" onClick={handleLoginClick}>
-                Login
-            </button>
-          </header>
+      <header className="header-container">
+    <img src='logo.png' alt="Gym World Logo" className="logo" /> 
+    <h1 className='heading'>Welcome to Gym World</h1>
+    <button className="login-button" onClick={handleLoginClick}>
+        Login
+    </button>
+</header>
       <div className="slider-container">
       <Slider {...settings}>
   <div className="slide slide1">
@@ -88,6 +89,16 @@ const HomePage = () => {
           {/* Add more slides as needed */}
         </Slider>
       </div>
+      <footer className="footer">
+        <div className="footer-content">
+          <p>&copy; 2024 Gym World. All rights reserved.</p>
+          <ul className="footer-links">
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-of-service">Terms of Service</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
   );
 };
