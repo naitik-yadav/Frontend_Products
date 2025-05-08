@@ -20,7 +20,7 @@ const Login = () => {
         setSuccessMessage('');
 
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/login/', {
+            const response = await axios.post('https://backend-products-six.vercel.app/api/login/', {
                 email,
                 password,
             });
@@ -63,7 +63,7 @@ const Login = () => {
         }
 
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/register/', formData, {
+            const response = await axios.post('https://backend-products-six.vercel.app/api/register/', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

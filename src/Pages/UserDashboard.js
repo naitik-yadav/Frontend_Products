@@ -50,38 +50,23 @@ function UserDashboard() {
 
     return (
         <div className="dashboard-container">
-              <header className="header-user">
-    <h1 className='heading'><i class='fas fa-dumbbell'></i> Welcome to Gym World</h1>
-</header>
-            <div className="cart-icon" onClick={handleCartClick} style={{ cursor: 'pointer' }}>
-            <FontAwesomeIcon icon={faShoppingCart} size="2x" />
-            {cartItemCount > 0 && (
-                <span className="cart-item-count">{cartItemCount}</span>
-            )}
-        </div>
-            {/* Slider Section */}
-            <div className="user-slider">
-                <Slider {...settings}>
-                    <div className="slides slide1">
-                        <h2 className="text-background"></h2>
-                    </div>
-                    <div className="slides slide2">
-                        <h2 className="text-background"></h2>
-                   </div>
-                    <div className="slides slide3">
-                        <h2 className="text-background"></h2>
-                    </div>
-                </Slider>
-            </div>
-
+            <header className="header-user">
+                <h1 className='heading'><i class='fas fa-dumbbell'></i> Welcome to Gym World</h1>
+                <div className="cart-icon" onClick={handleCartClick} style={{ cursor: 'pointer' }}>
+                    <FontAwesomeIcon icon={faShoppingCart} size="2x" />
+                    {cartItemCount > 0 && (
+                        <span className="cart-item-count">{cartItemCount}</span>
+                    )}
+                </div>
+            </header>
             {/* Products Section */}
             <div className="product-container">
                 {products.map(product => (
                     <div className="product-card" key={product.id}>
                         <img src={product.images} alt={product.product_name} className="product-image" />
                         <h2>{product.product_name}</h2>
-                        <p>Price: ${product.Price}</p>
-                        <button onClick={() => addToCart(product.id)}>Add Item</button>
+                        <p>Price: ₹{product.Price}</p>
+                        <button onClick={() => addToCart(product.id)} className="add-to-cart-btn">Add to Cart</button>
                     </div>
                 ))}
             </div>

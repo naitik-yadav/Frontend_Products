@@ -24,7 +24,7 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <header className="header-container">
-    <img src='logo.png' alt="Gym World Logo" className="logo" /> 
+    <img src='logo.jpg' alt="Gym World Logo" className="logo" /> 
     <h1 className='heading'>Welcome to Gym World</h1>
     <button className="login-button" onClick={handleLoginClick}>
         Login
