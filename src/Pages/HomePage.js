@@ -32,7 +32,10 @@ const HomePage = () => {
 </header>
       <div className="slider-container">
       <Slider {...settings}>
-</Slider>
+      <div className="slide slide1" />
+      <div className="slide slide2" />
+      <div className="slide slide3" />
+    </Slider>
       </div>
       <div className="content">
         <h2>About Us</h2>
