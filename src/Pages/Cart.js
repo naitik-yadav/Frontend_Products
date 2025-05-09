@@ -229,7 +229,7 @@ const Cart = () => {
                 )}
                 <div className="total-price-sidebar">
                     <h2>Total Price</h2>
-                    <p>${totalPrice}</p>
+                    <p>₹{totalPrice}</p>
                     <button 
                         className="checkout-button" 
                         onClick={handleCheckout}
