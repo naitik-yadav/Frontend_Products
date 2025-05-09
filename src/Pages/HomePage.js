@@ -32,21 +32,6 @@ const HomePage = () => {
 </header>
       <div className="slider-container">
       <Slider {...settings}>
-  <div className="slide slide1">
-    <h2 className="text-background">Get Fit, Stay Healthy!</h2>
-    <p className="text-background">Your journey to fitness starts here.</p>
-    {/* <button className="cta-button">Get Started</button> */}
-  </div>
-  <div className="slide slide2">
-    <h2 className="text-background">Join Our Community</h2>
-    <p className="text-background">Connect with fitness enthusiasts and trainers.</p>
-    {/* <button className="cta-button">Join Now</button> */}
-  </div>
-  <div className="slide slide3">
-    <h2 className="text-background">Explore Our Programs</h2>
-    <p className="text-background">Find the right program for your fitness goals.</p>
-    {/* <button className="cta-button">View Programs</button> */}
-  </div>
 </Slider>
       </div>
       <div className="content">
