@@ -77,7 +77,7 @@ function UserDashboard() {
             <div className="product-container">
                 {products.map(product => (
                     <div className="product-card" key={product.id}>
-                        <img src={product.images} alt={product.product_name} className="product-image" />
+                        <img src={product.image} alt={product.product_name} className="product-image" />
                         <h2>{product.product_name}</h2>
                         <p>Price: ₹{product.Price}</p>
                         <button onClick={() => addToCart(product.id)} className="add-to-cart-btn">Add to Cart</button>
