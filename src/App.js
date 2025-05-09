@@ -40,6 +40,7 @@ import HomePage from './Pages/HomePage';
 import Login from './Pages/Login';
 import UserDashboard from './Pages/UserDashboard';
 import Cart from './Pages/Cart';
+import OrdersPage from './Pages/Orders';
 // import NikeList from './Components/NikeList';
 // import NikeCreate from './Components/NikeCreate';
 // import NikeUpdate from './Components/NikeUpdate';
@@ -59,6 +60,7 @@ function App() {
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/buy-it" element={<UserDashboard />} />
         <Route path="/cart-items" element={<Cart />} />
+        <Route path="/orders" element={<OrdersPage />} />
           {/* <Route path="/create" element={<NikeCreate />} />
           <Route path="/update" element={<NikeUpdate />} />
           <Route path="/delete" element={<NikeDelete />} />

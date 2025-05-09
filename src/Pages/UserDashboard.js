@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faBoxOpen, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import axiosInstance from '../axiosConfig';
 import { useNavigate } from 'react-router-dom';
 
@@ -48,6 +48,14 @@ function UserDashboard() {
         navigate('/cart-items'); 
     };
 
+    const handleOrdersClick = () => {
+        navigate('/orders');
+    };
+
+    const handleLogout = () => {
+        navigate('/');
+    };
+
     return (
         <div className="dashboard-container">
             <header className="header-user">
@@ -58,6 +66,12 @@ function UserDashboard() {
                         <span className="cart-item-count">{cartItemCount}</span>
                     )}
                 </div>
+                <div className="orders-icon" onClick={handleOrdersClick} style={{ cursor: 'pointer' }}>
+                <FontAwesomeIcon icon={faBoxOpen} size="2x" />
+            </div>
+            <div className="logout-icon" onClick={handleLogout} style={{ cursor: 'pointer' }}>
+                <FontAwesomeIcon icon={faSignOutAlt} size="2x" />
+            </div>
             </header>
             {/* Products Section */}
             <div className="product-container">

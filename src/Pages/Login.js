@@ -20,7 +20,8 @@ const Login = () => {
         setSuccessMessage('');
 
         try {
-            const response = await axios.post('https://backend-products-six.vercel.app/api/login/', {
+            // const response = await axios.post('https://backend-products-six.vercel.app/api/login/', {
+            const response = await axios.post('http://127.0.0.1:8000/api/login/', {
                 email,
                 password,
             });

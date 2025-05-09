@@ -466,7 +466,7 @@ useEffect(() => {
               Select Image:
               <input
                 type="file"
-                onChange={(e) => setSelectedFile(e.target.files[0])} // Set the selected file
+                onChange={(e) => setSelectedFile(e.target.files[0])}
               />
             </label>
             <button type="submit">Create</button>
