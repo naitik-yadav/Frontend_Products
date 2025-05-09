@@ -212,6 +212,7 @@ const Cart = () => {
                                     alt={item.product.product_name} 
                                     className="product-image" 
                                 />
+
                                 <div className="product-info">
                                     <h2 className="product-name">{item.product.product_name}</h2>
                                     <p className="product-quantity">Quantity: {item.quantity}</p>
