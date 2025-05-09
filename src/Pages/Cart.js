@@ -215,7 +215,7 @@ const Cart = () => {
                                 <div className="product-info">
                                     <h2 className="product-name">{item.product.product_name}</h2>
                                     <p className="product-quantity">Quantity: {item.quantity}</p>
-                                    <p className="product-price">Price: ${parseFloat(item.product.Price).toFixed(2)}</p>
+                                    <p className="product-price">Price: ₹{parseFloat(item.product.Price).toFixed(2)}</p>
                                 </div>
                                 <button 
                                     className="remove-button" 
